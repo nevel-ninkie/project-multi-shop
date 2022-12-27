@@ -1,0 +1,111 @@
+.app {
+  background-color: $secondary;
+}
+
+.h1,
+.h2,
+.h3 {
+  font-weight: bold !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #3d464d;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a.text-secondary:hover,
+a.text-secondary:focus {
+  color: $blur !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.bg-light {
+  background-color: $light !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  &:hover {
+    color: #212529;
+    background-color: #ffcb0d;
+    border-color: #ffc800;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary !important;
+  border-color: $secondary !important;
+}
+
+.btn-square {
+  width: 40px;
+  height: 40px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.section-title {
+  position: relative;
+  .title {
+    position: relative;
+    z-index: 2;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed #bec5cb;
+    z-index: 1;
+  }
+}
