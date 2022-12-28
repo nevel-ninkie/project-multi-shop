@@ -6,7 +6,7 @@
           <router-link class="breadcrumb-item text-dark" to="/">
             Home
           </router-link>
-          <span class="breadcrumb-item active">Contact</span>
+          <span class="breadcrumb-item active">{{ breadcrumb }}</span>
         </nav>
       </div>
     </div>
@@ -15,7 +15,10 @@
 
 <script>
 export default {
-  name: 'BreadcrumbItem'
+  name: 'BreadcrumbItem',
+  props: {
+    breadcrumb: String
+  }
 };
 </script>
 

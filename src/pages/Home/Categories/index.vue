@@ -30,14 +30,23 @@
 </template>
 
 <script>
-import { CATEGORIES } from '../../../resources/categories';
+import callApi from '../../../api';
+import { ref } from 'vue';
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Categories',
-  data() {
+  setup() {
+    const categories = ref([]);
+    const fetch = () =>
+      callApi('categories', 'get', null).then((res) => {
+        if (res && res.status === 200 && res.data) {
+          return (categories.value = res.data);
+        }
+      });
+    fetch();
     return {
-      categories: CATEGORIES
+      categories
     };
   }
 };

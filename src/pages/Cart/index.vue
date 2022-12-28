@@ -1,10 +1,18 @@
 <template>
-  <h1>Cart Page</h1>
+  <BreadcrumbItem breadcrumb="Shopping Cart" />
+  <CartItem />
 </template>
 
 <script>
+import BreadcrumbItem from '../../components/Breadcrumb';
+import CartItem from './CartItem';
+
 export default {
-  name: 'CartPage'
+  name: 'CartPage',
+  components: {
+    BreadcrumbItem,
+    CartItem
+  }
 };
 </script>
 

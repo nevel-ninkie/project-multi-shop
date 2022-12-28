@@ -19,6 +19,7 @@
             <div class="product-action">
               <div
                 class="btn btn-outline-dark btn-square me-2 d-flex justify-content-center align-items-center"
+                @click="ADD_TO_CART(product)"
               >
                 <i class="fa fa-shopping-cart"></i>
               </div>
@@ -31,11 +32,6 @@
                 class="btn btn-outline-dark btn-square me-2 d-flex justify-content-center align-items-center"
               >
                 <i class="fa fa-sync-alt"></i>
-              </div>
-              <div
-                class="btn btn-outline-dark btn-square d-flex justify-content-center align-items-center"
-              >
-                <i class="fa fa-search"></i>
               </div>
             </div>
           </div>
@@ -65,13 +61,26 @@
 </template>
 
 <script>
-import { PRODUCTS } from '../../../resources/products';
+import { ref } from 'vue';
+import callApi from '../../../api';
+import { mapMutations } from 'vuex';
 
 export default {
   name: 'FeaturedProducts',
-  data() {
+  methods: mapMutations(['ADD_TO_CART']),
+  setup() {
+    const products = ref([]);
+
+    const fetchProducts = () =>
+      callApi('products', 'get', null).then((res) => {
+        if (res && res.status === 200 && res.data) {
+          return (products.value = res.data);
+        }
+      });
+
+    fetchProducts();
     return {
-      products: PRODUCTS
+      products
     };
   }
 };

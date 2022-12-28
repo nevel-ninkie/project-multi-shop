@@ -72,10 +72,10 @@
                 <i class="fa fa-angle-right me-2"></i>
                 Checkout
               </router-link>
-              <router-linka class="text-secondary" to="">
+              <router-link class="text-secondary" to="">
                 <i class="fa fa-angle-right me-2"></i>
                 Contact Us
-              </router-linka>
+              </router-link>
             </div>
           </div>
           <div class="col-md-4 mb-5">

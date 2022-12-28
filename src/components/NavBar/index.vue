@@ -43,7 +43,7 @@
                   class="badge text-secondary border border-secondary rounded-circle"
                   style="padding-bottom: 2px"
                 >
-                  0
+                  {{ totalCarts }}
                 </span>
               </router-link>
             </div>
@@ -55,8 +55,12 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  computed: mapState({
+    totalCarts: (state) => state.totalCarts
+  })
 };
 </script>
 

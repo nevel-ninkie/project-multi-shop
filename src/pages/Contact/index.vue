@@ -1,10 +1,10 @@
 <template>
-  <BreadcrumbItem />
+  <BreadcrumbItem breadcrumb="Contact" />
   <ContactItem />
 </template>
 
 <script>
-import BreadcrumbItem from './Breadcrumb';
+import BreadcrumbItem from '../../components/Breadcrumb';
 import ContactItem from './ContactItem';
 
 export default {
