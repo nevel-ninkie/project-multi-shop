@@ -1,0 +1,180 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "img": "cat-1.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 2,
+      "img": "cat-2.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 3,
+      "img": "cat-3.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 4,
+      "img": "cat-4.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 5,
+      "img": "cat-5.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 6,
+      "img": "cat-6.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 7,
+      "img": "cat-7.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 8,
+      "img": "cat-8.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 9,
+      "img": "cat-9.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 10,
+      "img": "cat-10.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 11,
+      "img": "cat-11.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    },
+    {
+      "id": 12,
+      "img": "cat-12.jpg",
+      "name": "Category Name",
+      "count": 100,
+      "path": ""
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "img": "product-1.jpg",
+      "name": "Product Name Goes Here",
+      "newPrice": 120,
+      "oldPrice": 130,
+      "amount": 99,
+      "star": 5
+    },
+    {
+      "id": 2,
+      "img": "product-2.jpg",
+      "name": "Product Name Goes Here",
+      "newPrice": 120,
+      "oldPrice": 130,
+      "amount": 99,
+      "star": 4
+    },
+    {
+      "id": 3,
+      "img": "product-3.jpg",
+      "name": "Product Name Goes Here",
+      "newPrice": 120,
+      "oldPrice": 130,
+      "amount": 99,
+      "star": 5
+    },
+    {
+      "id": 4,
+      "img": "product-4.jpg",
+      "name": "Product Name Goes Here",
+      "newPrice": 120,
+      "oldPrice": 130,
+      "amount": 99,
+      "star": 5
+    },
+    {
+      "id": 5,
+      "img": "product-5.jpg",
+      "name": "Product Name Goes Here",
+      "newPrice": 120,
+      "oldPrice": 130,
+      "amount": 99,
+      "star": 5
+    },
+    {
+      "id": 6,
+      "img": "product-6.jpg",
+      "name": "Product Name Goes Here",
+      "newPrice": 120,
+      "oldPrice": 130,
+      "amount": 99,
+      "star": 5
+    },
+    {
+      "id": 7,
+      "img": "product-7.jpg",
+      "name": "Product Name Goes Here",
+      "newPrice": 120,
+      "oldPrice": 130,
+      "amount": 99,
+      "star": 5
+    },
+    {
+      "id": 8,
+      "img": "product-8.jpg",
+      "name": "Product Name Goes Here",
+      "newPrice": 120,
+      "oldPrice": 130,
+      "amount": 99,
+      "star": 5
+    }
+  ],
+  "carts": [
+    {
+      "id": "2b6ebe6e-f790-434f-94d1-5c3036c6938d",
+      "productId": 1,
+      "name": "Product Name Goes Here",
+      "price": 120,
+      "count": 2,
+      "img": "product-1.jpg"
+    },
+    {
+      "id": "04180aab-6244-449b-9fda-a4e9dc888549",
+      "productId": 2,
+      "name": "Product Name Goes Here",
+      "price": 120,
+      "count": 1,
+      "img": "product-2.jpg"
+    }
+  ]
+}
